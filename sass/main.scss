@@ -1,15 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700&display=swap');
 *{
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
 }
+// Variables
+$princial: #555;
+// Globales
 body{
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Montserrat', sans-serif;
+}
+.sombra_ligera{
+    text-shadow: 1px 1px 1px gray;
+}
+.titulos{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.separador{
+    width: 120px;
+    margin: 0 auto;
+    margin: 40px auto;
+}
+.margin_bottom{
+    margin-bottom: 50px;
 }
 // Header
 .header{
-    background-color: #27496d;
+    background-color: $princial;
     height: 120px;
     .header-bar{
         max-width: 1000px;
@@ -21,7 +45,6 @@ body{
         flex-wrap: wrap;
         
         .nombre{
-            text-shadow: 1px 1px 1px gray;
             color: white;
             letter-spacing: 1px;
         }
@@ -32,15 +55,47 @@ body{
             grid-gap: 18px;
             text-align: center;
             a{
+                text-transform: uppercase;
                 color: white;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                font-size: 20px;
                 transition: all 300ms;
+                font-weight: 700;
             }
             a:hover{
-                font-size: 21px;
-                text-shadow: 1px 1px 3px black;
+                text-shadow: 2px 2px 2px #444;
             }
         }
     }
+}
+// Main
+.main{
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    .proyectos{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: repeat(2, 180px);
+        grid-gap: 15px;
+        li{
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+// Section
+.section-contacto{
+    text-align: center;
+}
+
+// Footer
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background: $princial;
+    color: white;
 }

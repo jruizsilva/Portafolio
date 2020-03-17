@@ -8,13 +8,14 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #ddd;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: "Montserrat", sans-serif;
 }
 
-.sombra_ligera {
+.sombra-ligera {
   text-shadow: 1px 1px 1px gray;
 }
 
@@ -28,16 +29,26 @@ h1, h2, h3, h4, h5 {
 .separador {
   width: 120px;
   margin: 0 auto;
-  margin: 40px auto;
+  margin: 30px auto;
 }
 
-.margin_bottom {
-  margin-bottom: 50px;
+.text-center {
+  text-align: center;
+}
+
+.centrar-contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .header {
   background-color: #555;
-  height: 120px;
+  height: 100px;
 }
 .header .header-bar {
   max-width: 1000px;
@@ -73,6 +84,9 @@ h1, h2, h3, h4, h5 {
   margin-right: auto;
   margin-left: auto;
 }
+.main h2 {
+  padding-top: 40px;
+}
 .main .proyectos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -81,20 +95,38 @@ h1, h2, h3, h4, h5 {
 }
 .main .proyectos li {
   background-color: #ccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.section-contacto {
-  text-align: center;
+.contenedor-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100vh;
+}
+.contenedor-info .sobre-mi p, .contenedor-info .contacto p {
+  width: 60%;
+  line-height: 1.8;
 }
 
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
+  height: 100px;
   background: #555;
   color: white;
+}
+.footer .footer-bar {
+  height: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer .footer-bar .redes-sociales {
+  display: grid;
+  grid-template-columns: repeat(2, 40px);
+  grid-template-rows: 40px;
+  grid-gap: 15px;
+}
+.footer .footer-bar .redes-sociales li {
+  background-color: lightblue;
+  border-radius: 5px;
 }

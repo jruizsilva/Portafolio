@@ -46,6 +46,10 @@ h1, h2, h3, h4, h5 {
   flex-direction: column;
 }
 
+img {
+  max-width: 100%;
+}
+
 .header {
   background-color: #555;
   height: 100px;
@@ -109,7 +113,7 @@ h1, h2, h3, h4, h5 {
 
 .footer {
   height: 100px;
-  background: #555;
+  background: grey;
   color: white;
 }
 .footer .footer-bar {
@@ -122,11 +126,10 @@ h1, h2, h3, h4, h5 {
 }
 .footer .footer-bar .redes-sociales {
   display: grid;
-  grid-template-columns: repeat(2, 40px);
-  grid-template-rows: 40px;
+  grid-template-columns: repeat(2, 35px);
+  grid-template-rows: 35px;
   grid-gap: 15px;
 }
 .footer .footer-bar .redes-sociales li {
-  background-color: lightblue;
   border-radius: 5px;
 }

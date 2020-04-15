@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700|PT+Sans:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .sombra-ligera {
-  text-shadow: 1px 1px 1px gray;
+  text-shadow: 1px 1px 1px #333;
 }
 
 .titulos {
@@ -80,7 +80,7 @@ img {
   font-weight: 700;
 }
 .header .header-bar .menu a:hover {
-  text-shadow: 2px 2px 2px #444;
+  text-shadow: 3px 3px 5px #333;
 }
 
 .main {
@@ -103,18 +103,21 @@ img {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 50px;
 }
-.main .proyectos li .contenedor-enlace {
-  background-color: #555;
-}
-.main .proyectos li .contenedor-enlace .enlace-proyecto {
-  font-family: "PT Sans", sans-serif;
-  font-size: 20px;
+.main .proyectos li .enlace-proyecto {
+  background-color: #646464;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  word-spacing: 1px;
   font-weight: 700;
   color: white;
   display: block;
   height: 50px;
   line-height: 50px;
   text-align: center;
+  transition: all 300ms;
+}
+.main .proyectos li .enlace-proyecto:hover {
+  background-color: #555;
 }
 
 .contenedor-info {
@@ -143,7 +146,7 @@ img {
 .footer .footer-bar p {
   font-size: 20px;
   word-spacing: 1px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.1px;
 }
 .footer .footer-bar .redes-sociales {
   display: grid;

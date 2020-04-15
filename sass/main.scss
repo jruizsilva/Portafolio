@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700|PT+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700&display=swap');
 
 *{
     margin: 0;
@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5{
     font-family: 'Montserrat', sans-serif;
 }
 .sombra-ligera{
-    text-shadow: 1px 1px 1px gray;
+    text-shadow: 1px 1px 1px #333;
 }
 .titulos{
     text-align: center;
@@ -81,7 +81,7 @@ img{
                 font-weight: 700;
             }
             a:hover{
-                text-shadow: 2px 2px 2px #444;
+                text-shadow: 3px 3px 5px #333;
             }
         }
     }
@@ -106,19 +106,23 @@ img{
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 50px;
             
-            .contenedor-enlace{
-                background-color: $princial;
-                .enlace-proyecto{
-                    font-family: 'PT Sans', sans-serif;
-                    font-size: 20px;
-                    font-weight: 700;
-                    color: white;
-                    display: block;
-                    height: 50px;
-                    line-height: 50px;
-                    text-align: center;
-                }
+            .enlace-proyecto{
+                background-color: rgb(100, 100, 100);
+                font-family: 'Open Sans', sans-serif;
+                font-size: 18px;
+                word-spacing: 1px;
+                font-weight: 700;
+                color: white;
+                display: block;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                transition: all 300ms;
             }
+            .enlace-proyecto:hover{
+                background-color: $princial;
+            }
+            
         }
     }
 }
@@ -153,7 +157,7 @@ img{
         p{
             font-size: 20px;
             word-spacing: 1px;
-            letter-spacing: .2px;
+            letter-spacing: .1px;
         }
         .redes-sociales{
             display: grid;
